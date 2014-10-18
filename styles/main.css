@@ -1,0 +1,355 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  padding-top: 30px;
+}
+nav {
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+  float: right;
+  padding-top: 48px;
+}
+nav li {
+  display: inline-block;
+  text-decoration: uppercase;
+}
+nav a {
+  padding: 24px;
+  font-family: "Raleway", cursive;
+}
+.left-side-text {
+  display: inline;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+  float: left;
+}
+.left-side-text h3 {
+  font-family: "PT Serif", serif;
+  font-size: 25px;
+}
+.right-side-text {
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+  float: right;
+}
+.right-side-text p {
+  font-family: "Raleway", cursive;
+  line-height: 24px;
+  padding-top: 10px;
+}
+.main-image img,
+.main-image p,
+.main-image h3 {
+  display: inline;
+  float: left;
+  width: 96.66666666666667%;
+  margin: 0 1.6666666666666667%;
+}
+.main-image h3 {
+  font-family: "Raleway", cursive;
+  font-size: 15px;
+  padding-top: 15px;
+}
+.main-image p {
+  font-family: "PT Serif", serif;
+  font-size: 19px;
+  padding-top: 19px;
+}
+.content-image-1 {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+}
+.content-image-1 img {
+  height: 354px;
+}
+.content-image-1 h3 {
+  font-family: "Raleway", cursive;
+  font-size: 15px;
+  color: #474747;
+}
+.content-image-1 p {
+  font-family: "PT Serif", serif;
+  font-size: 19px;
+  color: #474747;
+}
+.content-image-2 {
+  float: right;
+  position: relative;
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+}
+.content-image-2 img {
+  height: 392px;
+}
+.content-image-2 h3 {
+  font-family: "Raleway", cursive;
+  font-size: 15px;
+  color: #474747;
+}
+.content-image-2 p {
+  font-family: "PT Serif", serif;
+  font-size: 19px;
+  color: #474747;
+}
+.content-image-3 {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+}
+.content-image-3 img {
+  height: 345px;
+}
+.content-image-3 h3 {
+  font-family: "Raleway", cursive;
+  font-size: 15px;
+  color: #474747;
+}
+.content-image-3 p {
+  font-family: "PT Serif", serif;
+  font-size: 19px;
+  color: #474747;
+}
+.content-image-4 {
+  float: right;
+  position: relative;
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+}
+.content-image-4 img {
+  height: 589px;
+}
+.content-image-4 h3 {
+  font-family: "Raleway", cursive;
+  font-size: 15px;
+  color: #474747;
+}
+.content-image-4 p {
+  font-family: "PT Serif", serif;
+  font-size: 19px;
+  color: #474747;
+}
+.content-image-5 {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+}
+.content-image-5 img {
+  height: 368px;
+}
+.content-image-5 h3 {
+  font-family: "Raleway", cursive;
+  font-size: 15px;
+  color: #474747;
+}
+.content-image-5 p {
+  font-family: "PT Serif", serif;
+  font-size: 19px;
+  color: #474747;
+}
+.content-image-6 {
+  float: right;
+  position: relative;
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+  padding-bottom: 132px;
+}
+.content-image-6 img {
+  height: 339px;
+}
+.content-image-6 h3 {
+  font-family: "Raleway", cursive;
+  font-size: 15px;
+  color: #474747;
+}
+.content-image-6 p {
+  font-family: "PT Serif", serif;
+  font-size: 19px;
+  color: #474747;
+}
+.hover1 {
+  width: 100%;
+  height: 324px;
+  position: absolute;
+  margin-top: 30px;
+  opacity: 0;
+  background: rgba(239, 62, 107, 0.8) url('http://www.uniform.no/wp-content/themes/u/images/dots.svg');
+}
+.hover2 {
+  width: 100%;
+  height: 362px;
+  position: absolute;
+  margin-top: 30px;
+  opacity: 0;
+  background: rgba(239, 62, 107, 0.8) url('http://www.uniform.no/wp-content/themes/u/images/dots.svg');
+}
+.hover3 {
+  width: 100%;
+  height: 315px;
+  position: absolute;
+  margin-top: 30px;
+  opacity: 0;
+  background: rgba(239, 62, 107, 0.8) url('http://www.uniform.no/wp-content/themes/u/images/dots.svg');
+}
+.hover4 {
+  width: 100%;
+  height: 559px;
+  position: absolute;
+  margin-top: 30px;
+  opacity: 0;
+  background: rgba(239, 62, 107, 0.8) url('http://www.uniform.no/wp-content/themes/u/images/dots.svg');
+}
+.hover5 {
+  width: 100%;
+  height: 338px;
+  position: absolute;
+  margin-top: 30px;
+  opacity: 0;
+  background: rgba(239, 62, 107, 0.8) url('http://www.uniform.no/wp-content/themes/u/images/dots.svg');
+}
+.hover6 {
+  width: 100%;
+  height: 309px;
+  position: absolute;
+  margin-top: 30px;
+  opacity: 0;
+  background: rgba(239, 62, 107, 0.8) url('http://www.uniform.no/wp-content/themes/u/images/dots.svg');
+}
+.hover1 p,
+.hover2 p,
+.hover3 p,
+.hover4 p,
+.hover5 p,
+.hover6 p {
+  text-align: center;
+  padding-top: 25%;
+  color: white;
+  font-familt: arial;
+}
+.content-image-1:hover > .hover1,
+.content-image-2:hover > .hover2,
+.content-image-3:hover > .hover3,
+.content-image-4:hover > .hover4,
+.content-image-5:hover > .hover5,
+.content-image-6:hover > .hover6 {
+  opacity: 1;
+}
+footer#footer {
+  width: 100%;
+  height: 133px;
+  background-color: #fcbb00;
+  overflow: hidden;
+  padding-top: 30px;
+}
+footer#footer .box {
+  display: inline;
+  width: 21.666666666666668%;
+  margin: 0 1.6666666666666667%;
+  float: left;
+}
+footer#footer .box p {
+  font-family: "PT Serif", serif;
+}
+footer#footer .box span {
+  font-family: "PT Serif", serif;
+}
+.social-media {
+  float: right;
+}
+.social-media img {
+  padding-left: 20px;
+}
+.main-title {
+  clear: left;
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+  float: right;
+}
+.main-title h1 {
+  font-family: "PT Serif", serif;
+  font-size: 25px;
+}
+.bg-image img {
+  display: inline;
+  float: left;
+  width: 96.66666666666667%;
+  margin: 0 1.6666666666666667%;
+}
+.text-info {
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+  float: right;
+  padding-top: 40px;
+  padding-bottom: 63px;
+}
+.text-info p,
+.text-info ul {
+  font-family: "Raleway", cursive;
+  line-height: 24px;
+}
+.da-main {
+  display: inline;
+  float: left;
+  width: 46.666666666666664%;
+  margin: 0 1.6666666666666667%;
+  float: right;
+  padding-bottom: 63px;
+  padding-top: 40px;
+}
+.da-main h1 {
+  font-family: "PT Serif", serif;
+  font-size: 25px;
+}
+.da-main p {
+  padding-top: 10px;
+  font-family: "Raleway", cursive;
+  line-height: 24px;
+}
+.da-main strong {
+  font-weight: bold;
+}

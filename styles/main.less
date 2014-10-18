@@ -1,0 +1,436 @@
+@serif: "PT Serif", serif;
+@cursive: "Raleway", cursive;
+
+@main-font: @cursive;
+@secondary-font: @cursive;
+
+// GRID VARIABLES & MIXINS
+//------------------------------------
+// http://gridcalculator.dk - grid calculator
+
+// Change this values to change the size of the grid
+// 1200 grid width
+@column-width: 60;
+@gutter-width: 40;
+@columns: 12;
+
+// Utility variable — you should never need to modify this
+@gridsystem-width: (@column-width * @columns) + (@gutter-width * @columns) * 1px;
+
+// Set @total-width to 100% for a fluid layout
+//@total-width: @gridsystem-width;
+@total-width: 100%; //makes .column mixin turn into percentages 
+
+.column(@x,@columns:@columns) {
+	display: inline;
+	float: left;
+	width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width);
+	margin: 0 @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+
+// GLOBAL STYLES
+//----------------------------------------------------------
+
+// Fixes Box Model sizing issues
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+//Use this to force clear floated child elements
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+ }
+
+body {
+	
+}
+
+.content-wrap {
+	max-width: @gridsystem-width;
+	margin: 0 auto;
+}
+
+// remove default list styles 
+
+ul {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style-type: none;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+// header styles 
+
+img {
+	padding-top: 30px;
+}
+
+nav {
+	.column(6);
+	float: right;
+	padding-top: 48px;
+
+	li {
+		display: inline-block;
+		text-decoration: uppercase;
+	}
+
+	a {
+		padding: 24px;
+		font-family: @cursive;
+	}
+}
+
+.left-side-text {
+	.column(6);
+	float: left;
+
+	h3 {
+		font-family: @serif;
+		font-size: 25px;
+
+	}
+}
+.right-side-text {
+	.column(6);
+	float: right;
+
+	p {
+		font-family: @cursive;
+		line-height: 24px;
+		padding-top: 10px;
+	}
+}
+
+.main-image {
+	
+	img,p,h3{
+		.column(12);
+	}
+
+	h3 {
+		font-family: @cursive;
+		font-size: 15px;
+		padding-top: 15px;
+	}
+
+	p {
+		font-family: @serif;
+		font-size: 19px;
+		padding-top: 19px;
+	}
+}
+
+.content-image-1 {
+	float: left;
+	position:relative;
+	.column(6);
+
+	img {
+		height: 354px;
+	}
+
+	h3 {
+		font-family: @cursive;
+		font-size: 15px;
+		color: #474747
+	}
+
+	p {
+		font-family: @serif;
+		font-size: 19px;
+		color: #474747
+	}
+}
+
+.content-image-2 {
+	float: right;
+	position:relative;
+	.column(6);
+
+	img {
+		height: 392px;
+	}
+
+	h3 {
+		font-family: @cursive;
+		font-size: 15px;
+		color: #474747
+	}
+
+	p {
+		font-family: @serif;
+		font-size: 19px;
+		color: #474747
+	}
+}
+
+.content-image-3 {
+	float: left;
+	position:relative;
+	.column(6);
+
+	img {
+		height: 345px;
+	}
+
+	h3 {
+		font-family: @cursive;
+		font-size: 15px;
+		color: #474747
+	}
+
+	p {
+		font-family: @serif;
+		font-size: 19px;
+		color: #474747
+	}
+}
+
+.content-image-4 {
+	float: right;
+	position:relative;
+	.column(6);
+	
+	img {
+		height: 589px;
+	}
+
+	h3 {
+		font-family: @cursive;
+		font-size: 15px;
+		color: #474747
+	}
+
+	p {
+		font-family: @serif;
+		font-size: 19px;
+		color: #474747
+	}
+}
+
+.content-image-5 {
+	float: left;
+	position:relative;
+	.column(6);
+	
+	img {
+		height: 368px;
+	}
+
+	h3 {
+		font-family: @cursive;
+		font-size: 15px;
+		color: #474747
+	}
+
+	p {
+		font-family: @serif;
+		font-size: 19px;
+		color: #474747
+	}
+}
+
+.content-image-6 {
+	float: right;
+	position:relative;
+	.column(6);
+	padding-bottom: 132px;
+	
+	img {
+		height: 339px;
+	}
+
+	h3 {
+		font-family: @cursive;
+		font-size: 15px;
+		color: #474747
+	}
+
+	p {
+		font-family: @serif;
+		font-size: 19px;
+		color: #474747
+	}
+}
+
+.hover1	{
+
+	width:100%;
+	height:324px;
+	position:absolute;
+	margin-top:30px;
+	opacity:0;
+	background: rgba(239, 62, 107, .8) url('http://www.uniform.no/wp-content/themes/u/images/dots.svg');
+}
+
+.hover2	{
+
+	width:100%;
+	height:362px;
+	position:absolute;
+	margin-top:30px;
+	opacity:0;
+	background: rgba(239, 62, 107, .8) url('http://www.uniform.no/wp-content/themes/u/images/dots.svg');
+}
+
+.hover3	{
+
+	width:100%;
+	height:315px;
+	position:absolute;
+	margin-top:30px;
+	opacity:0;
+	background: rgba(239, 62, 107, .8) url('http://www.uniform.no/wp-content/themes/u/images/dots.svg');
+}
+
+
+.hover4	{
+
+	width:100%;
+	height:559px;
+	position:absolute;
+	margin-top:30px;
+	opacity:0;
+	background: rgba(239, 62, 107, .8) url('http://www.uniform.no/wp-content/themes/u/images/dots.svg');
+}
+
+.hover5	{
+
+	width:100%;
+	height:338px;
+	position:absolute;
+	margin-top:30px;
+	opacity:0;
+	background: rgba(239, 62, 107, .8) url('http://www.uniform.no/wp-content/themes/u/images/dots.svg');
+}
+
+.hover6	{
+
+	width:100%;
+	height:309px;
+	position:absolute;
+	margin-top:30px;
+	opacity:0;
+	background: rgba(239, 62, 107, .8) url('http://www.uniform.no/wp-content/themes/u/images/dots.svg');
+}
+
+.hover1	p, .hover2 p, .hover3 p, .hover4 p, .hover5 p, .hover6 p {
+
+	text-align: center;
+	padding-top:25%;
+	color:white;
+	font-familt:arial;
+}
+
+.content-image-1:hover > .hover1, .content-image-2:hover > .hover2, .content-image-3:hover > .hover3, .content-image-4:hover > .hover4, .content-image-5:hover > .hover5, .content-image-6:hover > .hover6,	{
+
+	opacity:1;
+
+}
+
+footer#footer {
+	width: 100%;
+	height: 133px;
+	background-color: #fcbb00;
+	overflow: hidden;
+	padding-top: 30px;
+
+	.box {
+		.column(3);
+		float: left;
+
+		p {
+			font-family: @serif;
+		}
+
+		span {
+			font-family: @serif;
+		}
+	}
+}
+.social-media {
+	float: right;
+
+	img {
+		padding-left: 20px;
+	}
+}
+
+
+
+// .content-wrap2 {
+// clear:both;
+// background-color: red;
+//  width:100%;
+//  height: 100px;
+// }
+
+// SECOND PAGE --------------------------------------------------------
+
+.main-title {
+	clear: left;
+	.column(6);
+	float: right;
+
+	h1 {
+		font-family: "PT Serif", serif;
+		font-size: 25px;
+	}
+}
+
+.bg-image {
+	
+	img {
+		.column(12);
+	}
+}
+
+.text-info {
+	.column(6);
+	float: right;
+	padding-top: 40px;
+	padding-bottom: 63px;
+
+	p, ul {
+		font-family: @cursive;
+		line-height: 24px;
+	}
+}
+
+// THIRD PAGE --------------------------------------------------------
+
+.da-main {
+	.column(6);
+	float: right;
+	padding-bottom: 63px;
+	padding-top: 40px;
+
+	h1 {
+		font-family: @serif;
+		font-size: 25px;
+	}
+	
+	p {
+	 padding-top: 10px;
+	 font-family: @cursive;
+	 line-height: 24px;
+	}
+	
+	strong {
+		font-weight: bold;
+	}
+}
